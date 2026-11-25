@@ -1,0 +1,171 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-primary-color);
+}
+
+/* IMAGEM */
+
+.hero-image {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* APRESENTAÇÃO */
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 40px 32px;
+  gap: 24px;
+}
+
+.hero-content h1 {
+  color: var(--background-secondary-color);
+  font-size: 36px;
+  font-weight: var(--title-weight);
+}
+
+.hero-content p {
+  color: var(--text-primary-color);
+  font-size: 16px;
+  font-weight: var(--text-weight);
+  line-height: 1.6;
+}
+
+/* BOTÃO */
+
+.hero-button {
+  display: inline-block;
+  padding: 14px 24px;
+  background-color: var(--background-secondary-color);
+  color: var(--text-secondary-color);
+  text-decoration: none;
+  font-weight: var(--menu-text-weight);
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* ========================================
+   TABLETS
+======================================== */
+
+@media screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .hero-image,
+  .hero-content {
+    width: 50%;
+  }
+
+  .hero-image {
+    height: auto;
+  }
+
+  .hero-content {
+    padding: 32px;
+    gap: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+}
+
+/* ========================================
+   DESKTOP
+======================================== */
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    height: 620px;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .hero-image,
+  .hero-content {
+    width: 50%;
+  }
+
+  .hero-image {
+    height: 100%;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .hero-content {
+    justify-content: center;
+    padding: 32px 48px;
+    gap: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .hero-button {
+    padding: 12px 20px;
+  }
+
+  .hero-button:hover {
+    background-color: var(--button-primary-color);
+    color: var(--text-primary-color);
+  }
+}
+
+/* ========================================
+   TELAS GRANDES
+======================================== */
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    height: 680px;
+  }
+
+  .hero-image img {
+    object-position: center;
+  }
+
+  .hero-content {
+    padding: 40px 64px;
+    gap: 22px;
+  }
+
+  .hero-content h1 {
+    font-size: 44px;
+  }
+
+  .hero-content p {
+    font-size: 17px;
+  }
+}
