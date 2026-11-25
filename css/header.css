@@ -1,0 +1,149 @@
+/* ========================================
+   HEADER - MOBILE FIRST
+======================================== */
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: var(--background-secondary-color);
+  position: relative;
+}
+
+/* LOGO */
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 56px;
+
+  font-family: var(--font-logo);
+  font-size: 36px;
+  font-weight: 400;
+
+  color: var(--text-secondary-color);
+  text-decoration: none;
+}
+
+/* MENU DE NAVEGAÇÃO */
+
+.navigation-menu {
+  margin-top: 0;
+}
+
+.navigation-menu label {
+  display: block;
+  cursor: pointer;
+}
+
+.navigation-menu label img {
+  display: block;
+  width: 32px;
+  height: auto;
+}
+
+.navigation-menu nav {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ nav {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 16px 24px;
+  background-color: var(--background-tertiary-color);
+  z-index: 10;
+}
+
+.list-links {
+  list-style: none;
+}
+
+.list-links li {
+  margin: 16px 0;
+}
+
+.list-links li a {
+  color: var(--text-primary-color);
+  text-decoration: none;
+  font-weight: var(--menu-text-weight);
+  font-size: 18px;
+}
+
+.list-links li a.active {
+  text-decoration: underline;
+}
+
+/* ========================================
+   TABLETS
+======================================== */
+
+@media screen and (min-width: 768px) {
+  .main-header {
+    padding: 20px 48px;
+  }
+
+  .navigation-menu {
+    width: 467px;
+  }
+
+  .navigation-menu label {
+    display: none;
+  }
+
+  .navigation-menu nav {
+    display: block;
+  }
+
+  .navigation-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .navigation-menu li {
+    margin: 0;
+  }
+
+  .list-links li a {
+    color: var(--text-secondary-color);
+    font-size: 16px;
+  }
+}
+
+/* ========================================
+   DESKTOP
+======================================== */
+
+@media screen and (min-width: 1024px) {
+  .main-header {
+    padding: 20px 120px;
+  }
+
+  .logo {
+    width: 260px;
+    height: 56px;
+    justify-content: flex-start;
+  }
+
+  .navigation-menu a:hover {
+    color: var(--button-primary-color);
+  }
+}
+
+/* ========================================
+   TELAS GRANDES
+======================================== */
+
+@media screen and (min-width: 1920px) {
+  .main-header {
+    padding: 20px 160px;
+  }
+}

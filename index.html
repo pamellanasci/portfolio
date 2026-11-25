@@ -1,11 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <title>Pam Nascimento</title>
+  </head>
+
+  <body>
+    <!-- Cabeçalho -->
+    <header class="main-header">
+      <a class="logo" href="index.html" title="Voltar para a página inicial">
+        PN
+      </a>
+
+      <div class="navigation-menu">
+        <label for="menu">
+          <img src="img/menu.png" alt="Ícone do menu" />
+        </label>
+
+        <input type="checkbox" id="menu" hidden />
+
+        <nav>
+          <ul class="list-links">
+            <li>
+              <a href="sobre.html" title="Acessar sobre">Sobre</a>
+            </li>
+
+            <li>
+              <a href="minhajornada.html" title="Acessar minha jornada">
+                Minha Jornada
+              </a>
+            </li>
+
+            <li>
+              <a href="projetos.html" title="Acessar projetos">Projetos</a>
+            </li>
+
+            <li>
+              <a href="contato.html" title="Acessar contato">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+      <section class="hero">
+        <div class="hero-image">
+          <img src="img/pam.jpeg" alt="Foto de Pam Nascimento" />
+        </div>
+
+        <div class="hero-content">
+          <h1>Olá, eu sou a Pam!</h1>
+
+          <p>
+            Acredito na educação como caminho para transformar realidades e
+            ampliar possibilidades. Ao longo da minha trajetória, tenho
+            aproximado educação, criatividade e tecnologia por meio de
+            experiências de aprendizagem.
+          </p>
+
+          <p>
+            Neste portfólio, compartilho um pouco da minha trajetória, dos
+            projetos que desenvolvi e das experiências que refletem meu
+            compromisso com uma educação criativa, significativa e conectada ao
+            mundo contemporâneo.
+          </p>
+
+          <a href="minhajornada.html" class="hero-button">
+            Conheça minha jornada
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="main-footer">
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/SEU-PERFIL"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          title="LinkedIn"
+        >
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+        <a
+          href="https://github.com/SEU-USUARIO"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+          title="GitHub"
+        >
+          <i class="bi bi-github"></i>
+        </a>
+
+        <a href="mailto:SEU-EMAIL" aria-label="Enviar e-mail" title="E-mail">
+          <i class="bi bi-envelope-fill"></i>
+        </a>
+      </div>
+
+      <p class="footer-copy">© 2026 Pam Nascimento.</p>
+    </footer>
+  </body>
 </html>
